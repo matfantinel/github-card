@@ -1,0 +1,75 @@
+:host {
+  display: block;
+
+  .card {
+    width: calc(var(--card-size) * 1.586);
+    height: var(--card-size);
+    border-radius: 0.75rem;
+    background: var(--bg-color);
+    display: grid;
+    grid-template-columns: 40% auto;
+    color: var(--fg-color);
+    align-items: center;
+  }
+
+  .card-details {
+    padding: 1rem;
+  }
+
+  .name {
+    font-size: 1.25rem;
+  }
+
+  .detail {
+    font-size: 0.8rem;
+  }
+
+  .card-avatar {
+    display: grid;
+    place-items: center;
+
+    img {
+      width: 65%;
+      max-height: 200px;
+      border-radius: 0.75rem;
+    }
+  }
+
+  .card-about {
+    margin-top: 1rem;
+    display: grid;
+    grid-auto-flow: column;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  .item .value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent-color);
+  }
+  .item .label {
+    margin-top: 0.15rem;
+    font-size: 1rem;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.75rem;
+  }
+  .skills .label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent-color);
+  }
+  .skills .value {
+    margin-top: 0.15rem;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
+}
