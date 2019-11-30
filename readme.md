@@ -10,13 +10,13 @@ See how easy it is to use this component:
 
 ```
 <!-- For browsers that support importing modules (Pretty much everything that is not IE) -->
-<script type="module" src="/build/github-card.esm.js"></script>
+<script type="module" src="/build/github-user-card.esm.js"></script>
 <!-- For browsers don't support (IE, we hate you) -->
-<script nomodule src="/build/github-card.js"></script>
+<script nomodule src="/build/github-user-card.js"></script>
 
 ...
 
-<github-card username="matfantinel"></github-card>
+<github-user-card username="matfantinel"></github-user-card>
 ```
 
 This component aims to provide ease to theme, but that is still being worked on.
@@ -37,3 +37,7 @@ npm run build
 ```
 
 Need help? Check out Stencil docs [here](https://stenciljs.com/docs/my-first-component).
+
+## Using Dummy Data
+
+Since GitHub imposes a 60-requests-per-hour limit on unauthenticated API calls, when developing a theme you may want to use dummy data. I've prepared two functions that return dummy data on this project. Just add `test-mode="true"` to your component declaration in the HTML.

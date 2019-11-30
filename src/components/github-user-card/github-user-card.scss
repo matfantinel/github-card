@@ -1,7 +1,7 @@
 :host {
   display: block;
 
-  .card {
+  .guc_card {
     width: calc(var(--card-size) * 1.586);
     height: var(--card-size);
     border-radius: 0.75rem;
@@ -12,19 +12,19 @@
     align-items: center;
   }
 
-  .card-details {
+  .guc_card-details {
     padding: 1rem;
   }
 
-  .name {
+  .guc_name {
     font-size: 1.25rem;
   }
 
-  .detail {
+  .guc_detail {
     font-size: 0.8rem;
   }
 
-  .card-avatar {
+  .guc_card-avatar {
     display: grid;
     place-items: center;
 
@@ -35,39 +35,39 @@
     }
   }
 
-  .card-about {
+  .guc_card-about {
     margin-top: 1rem;
     display: grid;
     grid-auto-flow: column;
   }
 
-  .item {
+  .guc_item {
     display: flex;
     flex-direction: column;
     margin-bottom: 0.5rem;
     text-align: center;
   }
-  .item .value {
+  .guc_item .guc_value {
     font-size: 1rem;
     font-weight: 600;
     color: var(--accent-color);
   }
-  .item .label {
+  .guc_item .guc_label {
     margin-top: 0.15rem;
     font-size: 1rem;
   }
 
-  .skills {
+  .guc_skills {
     display: flex;
     flex-direction: column;
     margin-top: 0.75rem;
   }
-  .skills .label {
+  .guc_skills .guc_label {
     font-size: 1rem;
     font-weight: 600;
     color: var(--accent-color);
   }
-  .skills .value {
+  .guc_skills .guc_value {
     margin-top: 0.15rem;
     font-size: 0.75rem;
     line-height: 1.25rem;

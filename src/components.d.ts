@@ -10,7 +10,8 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
-  interface GithubCard {
+  interface GithubUserCard {
+    'testMode': boolean;
     'username': string;
   }
 }
@@ -18,23 +19,24 @@ export namespace Components {
 declare global {
 
 
-  interface HTMLGithubCardElement extends Components.GithubCard, HTMLStencilElement {}
-  var HTMLGithubCardElement: {
-    prototype: HTMLGithubCardElement;
-    new (): HTMLGithubCardElement;
+  interface HTMLGithubUserCardElement extends Components.GithubUserCard, HTMLStencilElement {}
+  var HTMLGithubUserCardElement: {
+    prototype: HTMLGithubUserCardElement;
+    new (): HTMLGithubUserCardElement;
   };
   interface HTMLElementTagNameMap {
-    'github-card': HTMLGithubCardElement;
+    'github-user-card': HTMLGithubUserCardElement;
   }
 }
 
 declare namespace LocalJSX {
-  interface GithubCard {
+  interface GithubUserCard {
+    'testMode'?: boolean;
     'username'?: string;
   }
 
   interface IntrinsicElements {
-    'github-card': GithubCard;
+    'github-user-card': GithubUserCard;
   }
 }
 
@@ -44,7 +46,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
-      'github-card': LocalJSX.GithubCard & JSXBase.HTMLAttributes<HTMLGithubCardElement>;
+      'github-user-card': LocalJSX.GithubUserCard & JSXBase.HTMLAttributes<HTMLGithubUserCardElement>;
     }
   }
 }

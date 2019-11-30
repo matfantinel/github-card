@@ -6,16 +6,22 @@
   <title>Stencil Component Starter</title>
 
   <!-- For browsers that support importing modules (Pretty much everything that is not IE) -->
-  <script type="module" src="/build/github-card.esm.js"></script>
+  <script type="module" src="/build/github-user-card.esm.js"></script>
   <!-- For browsers don't support (IE, we hate you) -->
-  <script nomodule src="/build/github-card.js"></script>
+  <script nomodule src="/build/github-user-card.js"></script>
+
+  <style>
+    .guc_card {
+      background-color: red;
+    }
+  </style>
 
 </head>
 <body>
 
-  <github-card username="matfantinel"></github-card>
+  <github-user-card username="matfantinel" test-mode="true"></github-user-card>
   <br>
-  <!-- <github-card username="cassidyjames"></github-card> -->
+  <!-- <github-user-card username="cassidyjames"></github-user-card> -->
 
 </body>
 </html>
