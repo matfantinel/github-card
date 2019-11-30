@@ -2,7 +2,7 @@
 
 # GitHub User Card
 
-This is a simple project that displays a business-card-like web component with your GitHub information.
+This is a simple project that displays a business-card-like web component with your GitHub information. It uses the official GitHub API to fetch data and all the information is public.
 
 It uses StencilJS as a compiler and produces a simple JS file that can then be imported in your project.
 
