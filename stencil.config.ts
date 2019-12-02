@@ -4,11 +4,7 @@ import { sass } from '@stencil/sass';
 export const config: Config = {
   namespace: 'github-user-card',
   plugins: [
-    sass({
-      injectGlobalPaths: [
-        'src/globals/variables.scss'
-      ]
-    })
+    sass({})
   ],
   outputTargets: [
     {

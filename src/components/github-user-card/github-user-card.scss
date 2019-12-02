@@ -1,27 +1,20 @@
 :host {
+  --bg-color: #24292e;
+  --fg-color: #ffffff;
+  --accent-color: #b1feff;
+  --card-size: 300px;
+
   display: block;
 
   .guc_card {
     width: calc(var(--card-size) * 1.586);
     height: var(--card-size);
     border-radius: 0.75rem;
+    color: var(--fg-color);
     background: var(--bg-color);
     display: grid;
-    grid-template-columns: 40% auto;
-    color: var(--fg-color);
     align-items: center;
-  }
-
-  .guc_card-details {
-    padding: 1rem;
-  }
-
-  .guc_name {
-    font-size: 1.25rem;
-  }
-
-  .guc_detail {
-    font-size: 0.8rem;
+    grid-template-columns: 40% auto;
   }
 
   .guc_card-avatar {
@@ -35,41 +28,58 @@
     }
   }
 
-  .guc_card-about {
-    margin-top: 1rem;
-    display: grid;
-    grid-auto-flow: column;
-  }
+  .guc_card-details {
+    padding: 1rem;
 
-  .guc_item {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0.5rem;
-    text-align: center;
-  }
-  .guc_item .guc_value {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--accent-color);
-  }
-  .guc_item .guc_label {
-    margin-top: 0.15rem;
-    font-size: 1rem;
-  }
+    .guc_name {
+      font-size: 1.25rem;
+      line-height: 2rem;
+      font-weight: 600;
+    }
 
-  .guc_skills {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0.75rem;
-  }
-  .guc_skills .guc_label {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--accent-color);
-  }
-  .guc_skills .guc_value {
-    margin-top: 0.15rem;
-    font-size: 0.75rem;
-    line-height: 1.25rem;
+    .guc_home-location,
+    .guc_works-for {
+      font-size: 0.8rem;
+      line-height: 1.3rem;
+      display: flex;
+      align-items: center;
+
+      .icon {
+        width: 13px;
+        height: 13px;
+        fill: var(--fg-color);
+        margin-right: 8px;
+      }
+    }
+
+    .guc_indicators {
+      margin-top: 1rem;
+      display: grid;
+      grid-auto-flow: column;
+    }
+
+    .guc_item {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0.5rem;
+      text-align: center;
+
+      .guc_value {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--accent-color);
+      }
+      .guc_label {
+        margin-top: 0.15rem;
+        font-size: 1rem;
+      }
+    }
+
+    .guc_bio {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0.75rem;
+      font-size: 0.9rem;
+    }
   }
 }
