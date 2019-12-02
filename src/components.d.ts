@@ -11,7 +11,13 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 export namespace Components {
   interface GithubUserCard {
+    /**
+    * If true, this will display dummy data instead of fetching from the GitHub API
+    */
     'testMode': boolean;
+    /**
+    * The username of the GitHub profile you want to display
+    */
     'username': string;
   }
 }
@@ -31,7 +37,13 @@ declare global {
 
 declare namespace LocalJSX {
   interface GithubUserCard {
+    /**
+    * If true, this will display dummy data instead of fetching from the GitHub API
+    */
     'testMode'?: boolean;
+    /**
+    * The username of the GitHub profile you want to display
+    */
     'username'?: string;
   }
 

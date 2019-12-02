@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop } from "@stencil/core";
+import { Component, h, Prop } from "@stencil/core";
 import { GithubUserData } from "../../models/user-data";
 import { GithubRepoData } from "../../models/repo-data";
 import { getUserDummyData, getReposDummyData } from "../../utils/dummy-data";
@@ -9,7 +9,9 @@ import { getUserDummyData, getReposDummyData } from "../../utils/dummy-data";
   shadow: true
 })
 export class GithubCard {
+  /** The username of the GitHub profile you want to display */
   @Prop() username: string;
+  /** If true, this will display dummy data instead of fetching from the GitHub API */
   @Prop() testMode: boolean;
 
   userData: GithubUserData;

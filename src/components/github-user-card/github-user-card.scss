@@ -1,7 +1,11 @@
 :host {
+  /** The background color of the card */
   --bg-color: #24292e;
+  /** The text and icons color in the card */
   --fg-color: #ffffff;
+  /** The accent color used in the card */
   --accent-color: #b1feff;
+  /** The width of the card */
   --card-size: 300px;
 
   display: block;
